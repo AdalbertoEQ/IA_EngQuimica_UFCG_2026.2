@@ -2,6 +2,7 @@
 repositório contendo os dataset utilizados na disciplina de introdução a IA ministrada pelo professor Luís Gonzaga do departamento de engenharia química da UFCG no âmbito das atividades avaliativas da disciplina.
 
 estrutura do repositório:
+'''
 Root
 |----Aula_1
      |----Código   
@@ -16,3 +17,4 @@ Root
 |----Aula_3
      |----Código
      |----Planilha
+'''
