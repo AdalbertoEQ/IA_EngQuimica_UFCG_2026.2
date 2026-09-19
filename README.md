@@ -4,17 +4,11 @@ repositório contendo os dataset utilizados na disciplina de introdução a IA m
 estrutura do repositório:
 
 Root
-
 |----Aula_1
-
-     |----Código
-     
-          |----chemical_process_timeseries.csv
-          
+     |----Código   
+          |----chemical_process_timeseries.csv       
      |----Planilha
-     
-          |Aula_1.py
-          
+          |Aula_1.py     
      
 |----Aula_2
      |----Código
