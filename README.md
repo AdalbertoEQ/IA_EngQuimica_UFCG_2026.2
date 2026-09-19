@@ -5,6 +5,7 @@ estrutura do repositório:
 ```
 main
 |----README.md
+|----powershell.txt
 |----Aula_1
 |    |----Código   
 |    |    |----chemical_process_timeseries.csv       
