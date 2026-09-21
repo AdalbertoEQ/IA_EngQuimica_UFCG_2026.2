@@ -66,8 +66,8 @@ df = df.sort_values(by="timestamp").reset_index(drop=True) #essas duas linhas 54
 
 plt.plot(df['timestamp'], df['WaterTemp (C)'], linewidth=0.5)
 plt.xlabel('Tempo')
-plt.ylabel('T_reator (°C)')
-plt.title('Temperatura do reator vs tempo')
+plt.ylabel('T_agua (°C)')
+plt.title('Temperatura da agua vs tempo')
 plt.grid(alpha=0.3)
 plt.tight_layout()
 plt.show()
@@ -75,6 +75,8 @@ plt.show()
 #PERGUNTA 3 - INTERPRETAÇÂO
 
 """
-podemos observar, através do grafico, que durante a maior parte do tempo a temperatura se manteve muito estavel
-dentro de uma faixa entre 181 e 185°C, podemos observar a presença de alguns possiveis outliers dentro do primeiro 1/3 do grafico
+trata-se meramente de um grafico de temperatura versus tempo, não há muito o que observar ou concluir ja que o contexto dos dados não é conhecido,
+mas, quanto à cara do grafico podemos observar que a temperatura varia consistentemente dentro de uma faixa muito bem definida com dois possiveis
+outlier. Para concluir isso seria necessario realizar um tratamento nos dados e buscar relacionar a outros dados da planta para determinar se é um
+diusturbio real ou ruídos na leitura.
 """
