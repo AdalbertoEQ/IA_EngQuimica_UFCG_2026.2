@@ -21,8 +21,8 @@ main
 |    |----Planilha
 ```
 
-
+|Módulo 1|
 | # | Tema | Dataset | Colab |
 | :---: | :--- | :--- | :---: |
-| **01** | Introdução à IA na EQ | `aula01/coluna_destilacao_24h.csv` | [![Open In Colab](https://google.com)](https://colab.research.google.com/drive/147LVn50Hj1Ftf3qCNZ8yQVEFsCxkiuwR?authuser=1#scrollTo=49fKM137rFr4) |
+| **01** | Introdução à IA na EQ | `waterquality.csv` | [![Open In Colab](https://google.com)](https://colab.research.google.com/drive/147LVn50Hj1Ftf3qCNZ8yQVEFsCxkiuwR?authuser=1#scrollTo=49fKM137rFr4) |
 
