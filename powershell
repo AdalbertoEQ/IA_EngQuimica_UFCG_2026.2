@@ -1,0 +1,59 @@
+Link do cruso no youtube: https://www.youtube.com/playlist?list=PL35Zp8zig6slB_EaLbwKP57L9weBfICtS
+
+Aula 1
+powershell é uma interface CLI - command line interface, analogo ao commando
+powershell é mais poderoso do que o cmd, pode ser usado para programar dentro dele mas vamos ver
+voltado a infraestrutura e interface de dados.
+porque comandos se é mais intuitivo trabalhar com ambiente grafico mas certas tarefas em CLI são mais rapidas
+via automatização via scrip além de ser algo muito poderoso.
+
+get-host : comando que dá diversas informações sobre o sistema que hostea a interface.
+$PSVersionTable : $ permite ver a variavel e nesse caso é para ver a versão do powershell
+
+poweshell não é sensivel a letras maiusculas.
+
+get-date : mostra a data
+get-help {comando} : mostra ajuda de um dado comando
+cd {caminho} : comando para mudar de diretorio
+    caso não saiba o caminho, ao clicar cd +Tab ira começar a ver cada uma das
+    pastas dentro do lugar onde esta acessando o PS
+clear host : limpa a tela
+dir (dos) : mostra as pastas onde se esta
+ls (linux) : faz a mesma coisa do dir
+pwd : mostra o caminho de onde se está
+update-help : atualiza o comando help
+get-command -commandtype {tipo do comando} : da uma relação de comando que se associam ao comando citado
+show-command : abre a tela da interface sle para os comandos
+
+comandos essenciais para trabalho com pastas e arquivos
+
+mkdir {caminho da pasta} : cria um diretorio no caminho citado, caso o caminho não exista ele cria
+todas as pastas que o compõe
+mkdir {nome} : cria a pasta com o nome dentro do diretorio em que se ja está (ver comando pwd)
+cd {caminho} : acessa a pasta do caminho
+cd {nome} : acessa a pasta com o dado nome dentro do diretorio em que de está
+ni {caminho} : cria um arquivo com a extensão de interesse dentro do caminho desejado
+ni {nome} : cria um arquivo com a extensão desejada dentro do diretorio em que se está
+rni {caminho} {novo nome} : muda o nome do arquivo no caminho para o nome desejado mantendo conteudo
+rni {nome atual} {nome desejado} : muda o nome do arquivo mantendo conteudo no diretorio em que se está
+cp {caminho do arquivo} {caminho destino da copia} : cria uma copia de um arquivo no caminho para o novo caminho
+cp {nome} {nome2} : cria uma copia na mesma pasta em que se está
+mv <sintaxe> : se comporta analogamente ao cp movendo o arquivo ao invés de copiar ele
+erase {caminho} : apaga o arquivo do caminho informado
+erase {nome} : apaga o arquivo com o dado nome na pasta em que se está
+erase -force -recurse : apaga os arquivos sem perguntar se deseja continuar
+
+Aula 2
+
+import-module {nome do modulo} : importa um modulo especifico, exemplo servermaneger
+get-windowsfeature : mostra as features instaladas
+get-windowsfeature -name {nome} : mostra algo especifico, o nome deve estar estruturado em *palavra-chave* e ai é mostrado
+todos os serviços que tem essa palavra chave no nome. Aparentemente, sobcriterio desconhecido é possivel suprimir -name,
+exmeplo *fax*
+add-windowsfeature -name {nome} : adiciona/instala uma feature desejada, ao fim do comando pode-se usar -restart para
+reiniciar o servidor caso seja necessário.
+install-windowsfeature -name {nome} : comando novo para 2012 server "novo"
+remove-windowsfeature -name {nome} : remove uma função instalada, é passivo do uso de -restart para rainiciar se necessário
+
+Aula 3
+

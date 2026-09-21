@@ -1,0 +1,7 @@
+git clone {link}
+
+git add .
+git commit -m {mensagem}
+git push
+
+git pull
