@@ -73,7 +73,6 @@ plt.tight_layout()
 plt.show()
 
 #PERGUNTA 3 - INTERPRETAÇÂO
-
 """
 trata-se meramente de um grafico de temperatura versus tempo, não há muito o que observar ou concluir ja que o contexto dos dados não é conhecido,
 mas, quanto à cara do grafico podemos observar que a temperatura varia consistentemente dentro de uma faixa muito bem definida com dois possiveis
