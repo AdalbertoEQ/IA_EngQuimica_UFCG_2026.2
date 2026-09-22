@@ -1,6 +1,5 @@
 import pandas as pd
 from pathlib import Path
-import numpy as np
 
 caminho = Path(__file__).resolve()
 raiz = caminho.parent.parent
