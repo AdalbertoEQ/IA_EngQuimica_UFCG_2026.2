@@ -19,11 +19,11 @@ IA_EngQuimica_UFCG_2026.2
 |    |----Planilha
 |    |    |----reactor_sample_5k.csv
 |    
-|----Aula_3 --- não operante
+|----Aula_3
 |    |----Código
 |    |    |----Aula_3.py
 |    |----Planilha
-|    |    |----Distillation Column Dataset.xlsx
+|    |    |----petrochemical_advanced_data.csv
 |
 |----Aula_4
 |    |----Código

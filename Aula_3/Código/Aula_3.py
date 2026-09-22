@@ -27,7 +27,7 @@ print(f"Shape final: {df.shape}")
 print(f"Features: {[c for c in df.columns if c != 'Product_Yield_Tons']}")
 print(f"Target: Product_Yield_Tons")
 
-corr = df.corr()['Product_Yield_Tons'].sort_values()
+corr = df.corr(numeric_only=True)['Product_Yield_Tons'].sort_values(ascending=False)
 print("Correlação de cada feature com a produção:")
 print(corr)
 print(f"\nTop 5 features:")
