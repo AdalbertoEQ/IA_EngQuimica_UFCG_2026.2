@@ -29,7 +29,7 @@ IA_EngQuimica_UFCG_2026.2
 |    |----Código
 |    |    |----Aula_4.py   
 |    |----Planilha
-|         |----   
+|         |----sensor_readings.csv  
 |    
 |----Aula_5 --- em breve!
 |    |----Código
