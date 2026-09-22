@@ -5,7 +5,7 @@ import matplotlib.pylab as plt
 
 caminho = Path(__file__).resolve()
 raiz = caminho.parent.parent
-planilha = raiz / 'Planilha' / 'Distillation Column Dataset.xlsx'
+planilha = raiz / 'Planilha' / 'Distillation Column Dataset.csv'
 
 df = pd.read_excel(planilha)
 
