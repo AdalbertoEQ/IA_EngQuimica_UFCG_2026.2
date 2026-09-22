@@ -25,25 +25,25 @@ IA_EngQuimica_UFCG_2026.2
 |    |----Planilha
 |    |    |----petrochemical_advanced_data.csv
 |
-|----Aula_4
+|----Aula_4 --- em breve!
 |    |----Código
 |    |    |----Aula_4.py   
 |    |----Planilha
 |         |----   
 |    
-|----Aula_5
+|----Aula_5 --- em breve!
 |    |----Código
 |    |    |----Aula_5.py
 |    |----Planilha
 |    |    |----
 |    
-|----Aula_6
+|----Aula_6 --- em breve!
 |    |----Código
 |    |    |----Aula_6.py
 |    |----Planilha
 |    |    |----
 |
-|----Aula_7
+|----Aula_7 --- em breve!
 |    |----Código
 |    |    |----Aula_7.py
 |    |----Planilha
