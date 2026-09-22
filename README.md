@@ -8,17 +8,46 @@ main
 |----powershell.txt
 |----Aula_1
 |    |----Código   
-|    |    |----chemical_process_timeseries.csv       
+|    |    |----Aula_1.py     
 |    |----Planilha
-|         |----Aula_1.py     
+|         |----waterquality.csv     
 |    
 |----Aula_2
 |    |----Código
+|    |    |----Aula_2.py
 |    |----Planilha
+|    |    |----reactor_sample_5k.csv
 |    
 |----Aula_3
 |    |----Código
+|    |    |----Aula_3.py
 |    |----Planilha
+|    |    |----Distillation Column Dataset.xlsx
+|
+|----Aula_4
+|    |----Código
+|    |    |----Aula_4.py   
+|    |----Planilha
+|         |----   
+|    
+|----Aula_5
+|    |----Código
+|    |    |----Aula_5.py
+|    |----Planilha
+|    |    |----
+|    
+|----Aula_6
+|    |----Código
+|    |    |----Aula_6.py
+|    |----Planilha
+|    |    |----
+|
+|----Aula_7
+|    |----Código
+|    |    |----Aula_7.py
+|    |----Planilha
+|    |    |----
+|
 ```
 
 
