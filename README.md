@@ -23,6 +23,7 @@ main
 
 |modulos|
 | :-------------------------:|
+
 | # | Tema | Dataset | Colab |
 | :---: | :--- | :--- | :---: |
 | **01** | Leitura de datasets usando pandas | `waterquality.csv` | [![Open In Colab](https://google.com)](https://colab.research.google.com/drive/147LVn50Hj1Ftf3qCNZ8yQVEFsCxkiuwR?authuser=1#scrollTo=49fKM137rFr4) |
