@@ -7,7 +7,7 @@ caminho = Path(__file__).resolve()
 raiz = caminho.parent.parent
 planilha = raiz / 'Planilha' / 'Distillation Column Dataset.csv'
 
-df = pd.read_excel(planilha)
+df = pd.read_csv(planilha)
 
 df['T1 atraso 30 min'] = df['Sensor1'].shift(1)
 df['T1 atraso 60 min'] = df['Sensor1'].shift(2)

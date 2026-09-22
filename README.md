@@ -19,7 +19,7 @@ IA_EngQuimica_UFCG_2026.2
 |    |----Planilha
 |    |    |----reactor_sample_5k.csv
 |    
-|----Aula_3
+|----Aula_3 --- não operante
 |    |----Código
 |    |    |----Aula_3.py
 |    |----Planilha
