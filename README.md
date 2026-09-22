@@ -3,7 +3,8 @@ repositório contendo os dataset utilizados na disciplina de introdução a IA m
 
 estrutura do repositório:
 ```
-main
+IA_EngQuimica_UFCG_2026.2
+|
 |----README.md
 |----powershell.txt
 |----Aula_1
