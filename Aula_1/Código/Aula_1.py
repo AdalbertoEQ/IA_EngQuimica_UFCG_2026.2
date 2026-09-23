@@ -18,7 +18,7 @@ para relizar o plot de nosso grafico.
 
 import pandas as pd
 from pathlib import Path
-import matplotlib.pylab as plt
+import matplotlib.pyplot as plt
 
 # ETAPA 2 - LOCALIZAR OS DADOS COM RELAÇÂO A ESSE SCRIPT
 
