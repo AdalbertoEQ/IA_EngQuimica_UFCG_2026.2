@@ -57,3 +57,16 @@ remove-windowsfeature -name {nome} : remove uma função instalada, é passivo d
 
 Aula 3
 
+como trabalhar com serviços no powershell
+no gerenciador é possovel ver os processos e serviços que estão rodando em uma interface grafica e encerrar ele, vamos ver
+como fazer via linha de comando
+
+get-service : mostra todos os serviços no pc status|nome
+get-service | where-object {$_.Status -eq "running"} : filtra os serviços que estão rodando
+get-service {nome} : busca de serviço especifico
+get-service *{palavra}* : busca todos os serviços cujo essa palavra estão no nome
+stop-service {nome} : para o serviço especifico
+start-service {nome} : inicia o serviço de nome especifico
+restart-service {nome} : reinicia um servço especifico
+
+Aula 4
