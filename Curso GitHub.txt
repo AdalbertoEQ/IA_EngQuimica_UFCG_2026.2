@@ -79,3 +79,10 @@ git branch -D {nome}: apaga uma branch especifica
 git checkout -B {nome}: outra forma de criar uma branch, esse comando te faz acessar a branch criada
 git branch -m {nome}: troca o nome da branch que se está pelo nome escrito
 git log {nome}: mostra os logs na branch desejada
+
+o git diff permite verificar diferença entre branches
+git diff {nome 1} {nome 2}: mostra a diferença entre as branches determinadas
+
+23:20: repositorios remotos
+
+git push: envia as mudanças no repositorio local para o repositorio remoto
