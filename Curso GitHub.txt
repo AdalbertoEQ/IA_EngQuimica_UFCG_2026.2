@@ -1,0 +1,81 @@
+Link do curso no youtube: https://www.youtube.com/watch?v=ts-H3W1uLMM
+
+00:00: introdução
+git é um sistema de controle de versão, de codigo aberto.
+permite sincrinizar mudanças e facilitar o trabalho com versoes do codigo. Foi desenvolvido para facilitar o trabalho no desenvolvimento do linux
+git-scm.com: site oficial para instalação do linux
+dependendo da IDE pode ser usado visualmente.
+
+03:00: comandos
+git config --global user.name {"nome"}
+git config --global user.email {"email"}
+
+caso deseje-se configurar localmente basta tirar o "--global"
+
+git config user.name {"nome"}
+git config user.email {"email"}
+
+04:22: criação de novo repositorio ou clonar repositorio ja existente.
+
+git init: cria um repositorio na pasta em que se esta quandoe executa o codigo
+git init --bare: cria repositorio na raiz
+git clone {link} {nome da pasta}: clona o repositorio do link na pasta desejada, caso a pasta não exista ele ja cria
+
+05:53: entendimento do git desde sua concepção
+
+os arquivos na pasta não sao sincrinizados automaticamente então é necessario informar quando for a hora de upar
+existem 2 estagios até os arquivos serem versionados no repositório
+
+fazer->indexar->comitar(confirmar)
+
+git add {nome do arquivo}: indexar o arquivo no stage antes de ser commitado
+git status: mostra onde, em qual estapa, um dado arquivo está
+git add .: indexa todos os arquivos para serem commitados
+
+git add -A: atualizar arquivos que foram modificados após o primeiro git add e por isso não estao no stage
+git add *{extensão}: adiciona no stage os arquivos que seguem essa extenção
+git reset {nome}: retira do stage um arquivo não comitado que foi modificado após adicionar no stage
+git restore {nome}: volta a versão do arquivo
+git diff: mostra a diefrença entre o arquivo que está na pasta local e o arquivo que está no stage
+se houver diferença em muitos arquivos o terminal vai ficar uma bagunça, por isso podemos filtrar
+por nome e verificar se um arquivo especifico apresenta diferença
+
+13:33: commit
+
+confirmação das mudanças, uma fotografia dos arquivos mostrando identificador da mudança, metadados e mensagem
+
+git commmit -m {"mensagem"}: commita uma modificação com uma mensagem para caracterizar a mudança
+
+para evitar a etapa de adição, pode-se colocar um parametro -a que ja adiciona o que vai ser commitado
+
+git commit -a -m {"mensagem"}: commita suprimindo a etapa de git add
+git coment --amend -m {"mensagem"}: atualiza uma modificação que foi indexada após commit
+
+15:11: logs e historico
+
+git log: mostra os commits
+git log -n: mostra os n ultimos commits 
+git log --oneline -n: mostra os ultimos n commits onde todas as informações de cada commit estão apenas em uma linha
+git log --oneline -n --graph: mostra tudo do anterior além da organização das branchs
+git log --author={"nome"}: filtra os commits por author
+git log --before={"yyyy-mm-dd"}: mostra os commits feitos antes de uma data
+git log -- {pasta}: mostra os commits em uma pasta
+git shortlog: mostra os autores e a quantidade de commits por autor
+git shortlog -sn: filtra apenas os commits por autor
+git reflog: ações no repositorio
+
+18:30: logs e historico no vscode
+
+git graph: extensão para visualizar de modo intuitivo
+
+19:03: o que são branches
+
+são as ramificações na pasta, nada mais é do que uma copia completa do repositorio em outra pasta onde as modificações
+nessa segunda pasta não impactam a pasta original
+caso deseje essas modificações podem ser implementadas no principal
+
+git branch {nome}: cria uma branch com esse nome especifico
+git branch -D {nome}: apaga uma branch especifica
+git checkout -B {nome}: outra forma de criar uma branch, esse comando te faz acessar a branch criada
+git branch -m {nome}: troca o nome da branch que se está pelo nome escrito
+git log {nome}: mostra os logs na branch desejada

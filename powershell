@@ -70,3 +70,10 @@ start-service {nome} : inicia o serviço de nome especifico
 restart-service {nome} : reinicia um servço especifico
 
 Aula 4
+
+vizualização de eventos via linha de comando.
+get-eventlog : mostra os eventos no windows, antes de mostrar vai perguntar que tipo de evento deseja ver
+get-eventlog {tipo do log que deseja ver} : identico ao anterior mas sem a etapa de perguntar o que deseja ver
+get-eventlog -newest {numero} {tipo} : vai mostrar os n logs mais recentes do tipo solicitado
+get-eventlog {tipo} | where-object {$_.instanceid -eq {codigo}} : mostra os logs do tipo desejado que possuem aquele codigo
+get-event {tipo} | where-object -eq {$_.entrytype -eq {palavra}} : mostra os logs do tipo desejado que poeeuem essa palavra no nome
