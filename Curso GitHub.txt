@@ -83,6 +83,38 @@ git log {nome}: mostra os logs na branch desejada
 o git diff permite verificar diferença entre branches
 git diff {nome 1} {nome 2}: mostra a diferença entre as branches determinadas
 
-23:20: repositorios remotos
+23:20: sincronismos de repositorios remotos
 
-git push: envia as mudanças no repositorio local para o repositorio remoto
+do proprio github:
+    criação do zero:
+echo "# teste" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AdalbertoEQ/teste.git
+git push -u origin main
+
+    upando repositorio local no virtual:
+git remote add origin https://github.com/AdalbertoEQ/teste.git
+git branch -M main
+git push -u origin main
+
+git remote -v: mostra o nome de acesso do repositorio remoto
+git push: envio do repositorio local para o virtual
+git remote remove
+git remote add
+
+git pull: sincroniza as mudanças feitas no virtual para o local
+git remote show origin: informações adicionais do remote
+git remote set-url origin {nova url}
+
+é uma boa pratica sempre fazer git pull antes de começar a trabalhar e antes de enviar
+
+27:21: atualização dos trabalhos em branches paralelos
+
+git checkout {nome}: vai para a branch especificada
+git merge {nome da branch}: adiciona as mudanças na branch no main estando na main
+git merge --abort: abortar o merge caso ocorra conflito isso ocorre via commit (diferente do rebase)
+
+git rebase main: estando na branch, isso manda o historico de logs para a main
