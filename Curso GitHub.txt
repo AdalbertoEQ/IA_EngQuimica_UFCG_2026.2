@@ -116,5 +116,12 @@ git remote set-url origin {nova url}
 git checkout {nome}: vai para a branch especificada
 git merge {nome da branch}: adiciona as mudanças na branch no main estando na main
 git merge --abort: abortar o merge caso ocorra conflito isso ocorre via commit (diferente do rebase)
+git merge --continue
 
 git rebase main: estando na branch, isso manda o historico de logs para a main
+
+git rebase -i HEAD~n: da o rebase de n commits
+
+git rebase --abort
+git rebase --continue
+
