@@ -77,3 +77,20 @@ get-eventlog {tipo do log que deseja ver} : identico ao anterior mas sem a etapa
 get-eventlog -newest {numero} {tipo} : vai mostrar os n logs mais recentes do tipo solicitado
 get-eventlog {tipo} | where-object {$_.instanceid -eq {codigo}} : mostra os logs do tipo desejado que possuem aquele codigo
 get-event {tipo} | where-object -eq {$_.entrytype -eq {palavra}} : mostra os logs do tipo desejado que poeeuem essa palavra no nome
+
+Aula 5
+
+ipconfig: mostra informações sobre a conexão de rede (dos)
+ipconfig /all: mostra ainda mais informações (dos)
+get-netipconfiguration: mostra informações sobre a rede, não é igual ao ipconfig
+get-netipadress: mostra as informações com mais detalhes
+ncpa.cpl: mostra as mesmas informações e possibilita configurar manualmente em ambiente grafico
+new-netipadress [novo ip] -interfacealias [nome da placa] -defaultgateway [endereço do roteador/proxy] -adressfamily [ipv4] -prefixlength [tamanho do prfixo]: permite configurar o novo endereço de ip
+set-dnsclientserveradress -interfacealias [nome da placa] -serveradress [dns preferencial, dns secundario]: seta os dns
+set-netipinterface -interfacealias [nome da placa] -dhcp enabled: configura a placa para dhcp automaticamente
+set-dnsclientserveradress -interfacealias [nome da placa] -resetserveradress: reseta configurações padrão
+remove-netroute interfacealias [nome da placa]: reseta configurações padrão
+restart-netadapter -interfacealias [nome da placa]: reinicia a placa
+
+Aula 6
+
